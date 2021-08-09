@@ -7,10 +7,10 @@ from zipfile import ZipFile
 def mysqlconnect():
     # To connect MySQL database
     conn = pymysql.connect(
-        host='padnetdb.cv910s0qh4yg.us-east-2.rds.amazonaws.com',
-        user='devuser',
-        password = "BioMedix@12345",
-        db='biomedixDEV',
+        host='localhost',
+        user='root',
+        password = "root",
+        db='mydb',
         )
     
     cur = conn.cursor()
